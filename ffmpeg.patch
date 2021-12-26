@@ -1,0 +1,11 @@
+diff --unified --recursive --text v4.5.3.0/src/gfx/freeimage.cpp v4.6.2.0/src/gfx/freeimage.cpp
+--- v4.5.3.0/src/gfx/freeimage.cpp	2021-12-25 09:04:59.916655000 +0800
++++ v4.6.2.0/src/gfx/freeimage.cpp	2021-12-25 09:10:22.256631733 +0800
+@@ -253,7 +253,6 @@
+ 
+     // Force seeking to key frames
+     formatContext->seek2any = false;
+-    videoStream->skip_to_keyframe = true;
+     if (decoder->capabilities & CAP_TRUNCATED)
+     {
+         codecContext->flags |= CAP_TRUNCATED;
