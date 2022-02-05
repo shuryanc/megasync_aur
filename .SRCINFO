@@ -1,7 +1,7 @@
 pkgbase = megasync
 	pkgdesc = Easy automated syncing between your computers and your MEGA cloud drive
-	pkgver = 4.6.2.0
-	pkgrel = 2
+	pkgver = 4.6.3.0
+	pkgrel = 4
 	url = https://github.com/meganz/MEGAsync
 	arch = i686
 	arch = x86_64
@@ -23,13 +23,13 @@ pkgbase = megasync
 	depends = qt5-base
 	depends = ffmpeg
 	depends = libpdfium
-	source = git+https://github.com/meganz/MEGAsync.git#tag=v4.6.2.0_CentOS7
+	source = git+https://github.com/meganz/MEGAsync.git#tag=v4.6.3.0_Linux
 	source = meganz-sdk::git+https://github.com/meganz/sdk.git
 	source = pdfium.patch
 	source = ffmpeg.patch
 	sha256sums = SKIP
 	sha256sums = SKIP
 	sha256sums = 40d711ece72315787f42f3ea12611f03f0752303afd7ffebaf84c59eb164661f
-	sha256sums = 326889c95902eff3f27a10f6ef99645fa5d29341fbcdbac6536f8350df30b18a
+	sha256sums = bc8a8460c967d084e2643431dbb06c03897f1944a0e899318fc78b611f9255e6
 
 pkgname = megasync
