@@ -1,6 +1,6 @@
 pkgbase = megasync
 	pkgdesc = Easy automated syncing between your computers and your MEGA cloud drive
-	pkgver = 4.6.3.0
+	pkgver = 4.6.5.0
 	pkgrel = 4
 	url = https://github.com/meganz/MEGAsync
 	arch = i686
