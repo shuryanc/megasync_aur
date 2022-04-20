@@ -6,7 +6,7 @@
 # Contributor: Hexchain Tong <i at hexchain dot org>
 
 pkgname=megasync
-pkgver=4.6.3.0
+pkgver=4.6.5.0
 pkgrel=4
 pkgdesc="Easy automated syncing between your computers and your MEGA cloud drive"
 arch=('i686' 'x86_64')
@@ -19,12 +19,12 @@ makedepends=('qt5-tools' 'swig' 'doxygen' 'lsb-release' 'git')
 _extname="_Linux"
 source=("git+https://github.com/meganz/MEGAsync.git#tag=v${pkgver}${_extname}"
         "meganz-sdk::git+https://github.com/meganz/sdk.git"
-		"pdfium.patch"
-		"ffmpeg.patch")
+        "pdfium.patch"
+        "ffmpeg.patch")
 sha256sums=('SKIP'
             'SKIP'
-			'40d711ece72315787f42f3ea12611f03f0752303afd7ffebaf84c59eb164661f'
-			'bc8a8460c967d084e2643431dbb06c03897f1944a0e899318fc78b611f9255e6')
+            '40d711ece72315787f42f3ea12611f03f0752303afd7ffebaf84c59eb164661f'
+            'bc8a8460c967d084e2643431dbb06c03897f1944a0e899318fc78b611f9255e6')
 
 prepare() {
     cd "MEGAsync/src/MEGASync/mega"
@@ -42,7 +42,7 @@ prepare() {
     echo "4"
 
     cd "src/MEGASync/mega"
-	patch -Np1 -i "$srcdir/pdfium.patch"
+    patch -Np1 -i "$srcdir/pdfium.patch"
     patch -Np1 -i "$srcdir/ffmpeg.patch"
 }
 
